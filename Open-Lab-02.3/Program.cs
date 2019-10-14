@@ -1,19 +1,19 @@
-﻿using System;
+using System;
 
-namespace Open_Lab_02._3
+namespace open_lab_01._3
 {
     class Program
     {
+        public static int Addition(int a)
+        {
+            return (++a);
+        }
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter 2 numbers");
-            string firstnumber = Console.ReadLine();
-            string secondnumber = Console.ReadLine();
-            double a = Convert.ToInt32(firstnumber);
-            double b = Convert.ToInt32(secondnumber);
-            double c = a % b;
-            Console.WriteLine(c);
-
+            string line1 = Console.ReadLine();
+            int a = int.Parse(line1);
+            
+            Console.WriteLine(Addition(a));
         }
     }
 }
